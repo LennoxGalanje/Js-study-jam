@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Lennox-Galanje" />
+    <meta name="description" content="This is a simple FAQ Accordion" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>FAQ Accordion</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section class="faq__card">
+        <div class="faq__header">
+          <figure class="faq__icon-star">
+            <img
+              src="./images/icon-star.svg"
+              alt="icon-star"
+              width="40"
+              height="41"
+            />
+            <figcaption class="offscreen">icon-star</figcaption>
+          </figure>
+          FAQs
+        </div>
+        
+        <div class="faq-accordion__item">
+          <button class="faq-accordion__question" aria-expanded="true">
+            <span>What is Frontend Mentor, and how will it help me?</span>
+            <figure class="faq-accordion__icon"></figure>
+          </button>
+          <div class="faq-accordion__answer faq-accordion__answer--closed">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </div>
+        </div>
+        <div class="line"></div>
+      </section>
+    </main>
+  </body>
+</html>
