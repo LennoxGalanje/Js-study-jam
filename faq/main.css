@@ -175,5 +175,60 @@ main {
 }
 
 @media screen and (min-width: 992px) {
+  header {
+    height: 320px;
+  }
+  .faq__card {
+    transform: translateX(-50%);
+    top: -167.5px;
+    width: 600px;
+    padding: 2.5rem;
+    border-radius: 16px;
+  }
   
+  .faq__header {
+    font: var(--DISPLAY-DSK);
+    margin-bottom: 2rem;
+  }
+  .faq__icon-star img{
+    max-width: 40px;
+  }
+
+  .faq-accordion__item{
+    margin: 1.5rem 0rem;
+  }
+  
+  .faq-accordion__question {
+    font: var(--TITLE-DSK);
+    max-width: 520px;
+  }
+  
+  .faq-accordion__question span {
+    max-width: 449px;
+  }
+  
+  .faq-accordion__answer{
+    font: var(--BODY-DSK);
+    max-width: 520px;
+  }
+  
+  .faq-accordion__answer{
+    display: none;
+  }
+  
+  .line{
+    width: 520px;
+  }
+  
+  .faq-accordion__answer--open{
+    display: block;
+  }
+  .faq-accordion__question[aria-expanded="true"] .faq-accordion__icon{
+    background-color: var(--MINUS-BTN-BG);
+  }
+
+  .faq-accordion__question .faq-accordion__question-txt:hover{
+    color: var(--QUESTION-HVR-CLR);
+    cursor: pointer;
+  }
 }
