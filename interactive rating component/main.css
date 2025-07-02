@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* || REST */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --WHITE: #FFF;
+  --BLACK: #000;
+  --GREY-950:#131518;
+  --GREY-900:#262E38;
+  --GREY-500:#969FAD;
+  --ORANGE:#FC7614;
+
+
+  /* GRADIENTS */
+  --RADIAL-GRAD: radial-gradient(circle at center, #232a34, #181e27);
+
+  /* TYPOGRAPHY */
+  --FF: "Overpass", sans-serif;
+  --TEXT-PRESET-1: bold 1.75rem/2.1875rem var(--FF);
+  --TEXT-PRESET-2: bold 1.5rem/1.875rem var(--FF);
+  --TEXT-PRESET-3: bold 1rem/1.5rem var(--FF);
+  --TEXT-PRESET-4-BOLD: bold .9375rem/1.1875rem var(--FF);
+  --TEXT-PRESET-4:normal .9375rem/1.5rem var(--FF);
+  --TEXT-PRESET-5-BOLD: bold .875rem/1.125rem var(--FF);
+  --TEXT-PRESET-5-SEMI-BOLD:600 0.875rem/1.5rem var(--FF);
+  --TEXT-PRESET-5: normal 0.875rem/1.375rem var(--FF);
+  
+  /* TYPOGRAPHY-LETTER-SPACING */
+  
+  --TEXT-PRESET-3-LS:0.0125rem;
+  --TEXT-PRESET-4-BOLD-LS:0.125rem;
+  --TEXT-PRESET-5-BOLD-LS:0.1169rem;
+  --TEXT-PRESET-5-SEMI-BOLD-LS:.0106rem;
+  
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.responsive-image {
+  display: none;
+}
+
+/* MOBILE FIRST DESIGN */
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: grid;
+  place-content: center;
+  background-color: var(--GREY-950);
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+/* || INDEX-HTMTL */
+/* RATING-CONTAINER */
+.rating__container{
+    width: 327px;
+    height: 360px;
+    background-color:var(--BLACK) ;
+    background: var(--RADIAL-GRAD);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+/* RATING-STAR HEADER */
+.rating__header {
+    margin-bottom: 16px;
+}
+.rating__star{
+    width:40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    background-color: var(--GREY-900);
+    margin-bottom: 1.5rem;
+}
+
+.rating__star img{
+    max-width: 13.96px;
+}
+
+.rating__title{
+    color: var(--WHITE);
+    font: var(--TEXT-PRESET-2);
+    margin-bottom: 1rem;
+}
+
+.rating__description{
+    color: var(--GREY-500);
+    font: var(--TEXT-PRESET-5);
+    margin-bottom: 1rem;
+}
+
+/* RATING-FORM */
+.rating__form{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.rating__buttons{
+    display: flex;
+    width: 279px;
+    justify-content: space-between;
+}
+
+.rating__button{
+    position: relative;
+    text-align: center;
+}
+
+.rating__input{
+    opacity: 0;
+    position: absolute;
+    height: 42px;
+    width: 42px;  
+}
+
+.rating__number{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: var(--GREY-900);
+    border-radius: 50%;
+    font: var(--TEXT-PRESET-4-BOLD);
+    line-height: 42px;
+    letter-spacing: var(--TEXT-PRESET-5-BOLD-LS);
+    color: var(--GREY-500);
+}
+
+.rating__input:checked + .rating__number{
+    background-color: var(--ORANGE);
+    color: var(--GREY-900);
+}
+
+.rating__submit{
+    width: 279px;
+    height: 45px;
+    background-color: var(--ORANGE);
+    text-align: center;
+    border: none;
+    border-radius: 22.5px; ;
+    text-transform: uppercase;
+    font: var(--TEXT-PRESET-5-BOLD);
+    color: var(--GREY-950);
+    line-height: 45px;
+    letter-spacing:var(--TEXT-PRESET-5-BOLD-LS) ;
+}
+/*  || THANK-HTML */
+.thanks__container{
+    width: 327px;
+    height: 360px;
+    border-radius: 15px;
+    background: var(--RADIAL-GRAD);
+    padding: 2 rem 1.5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* THANKS STATUS */
+.thanks__status{
+    margin: 24px;
+}
+
+.thanks__status img {
+    max-width: 114px;
+}
+
+/* THANKS-MESSAGE */
+.thanks__message{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+.thanks__rating{
+width: 168px;
+height: 32px;
+padding: 0rem 1rem;
+color: var(--ORANGE);
+font: var(--TEXT-PRESET-5);
+line-height: 32px;
+letter-spacing: var(--TEXT-PRESET-5-BOLD);
+background-color: var(--GREY-900);
+border-radius: 22.4px;
+margin-bottom: 24px;
+
+}
+
+.thanks__title{
+    color: var(--WHITE);
+    font: var(--TEXT-PRESET-2);
+    margin-bottom: 1rem;
+}
+
+.thanks__description{
+    max-width: 279px;
+    color: var(--GREY-500);
+    font: var(--TEXT-PRESET-4);
+
+}
