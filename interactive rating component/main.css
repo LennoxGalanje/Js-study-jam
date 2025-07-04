@@ -294,5 +294,13 @@ h2 {
   }
 }
 
-@media screen and (min-width: 996px) {
+@media screen and (min-width: 992px) {
+  
+  /* RATING-FORM */
+  .rating__number:hover,
+  .rating__submit:hover,
+  .rating__submit:focus-visible {
+    background-color: var(--WHITE);
+    cursor: pointer;
+  }
 }
