@@ -9,7 +9,7 @@
       content="This is an interactive rating component"
     />
     <link rel="shortcut icon" href="./images/" type="image/x-icon" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="main.css" />
     <title>Interactive Rating Component</title>
   </head>
   <body>
@@ -34,34 +34,55 @@
       </div>
 
       <form
-        action="./thanks.html"
-        class="rating__form"
+        action="thanks.html"
         method="get"
-        id="ratingform"
+        id="ratingForm"
+        class="rating__form"
       >
         <div class="rating__buttons">
           <label class="rating__button" data-value="1">
-            <input type="radio" name="rating" class="rating__input" required />
+            <input 
+            type="radio" 
+            name="rating"
+            value="1" 
+            class="rating__input" 
+            required />
             <span class="rating__number">1</span>
           </label>
 
           <label class="rating__button" data-value="2">
-            <input type="radio" name="rating" class="rating__input" />
+            <input 
+            type="radio" 
+            name="rating"
+            value="2"  
+            class="rating__input" />
             <span class="rating__number">2</span>
           </label>
 
           <label class="rating__button" data-value="3">
-            <input type="radio" name="rating" class="rating__input" />
+            <input 
+            type="radio" 
+            name="rating"
+            value="3"  
+            class="rating__input" />
             <span class="rating__number">3</span>
           </label>
 
           <label class="rating__button" data-value="4">
-            <input type="radio" name="rating" class="rating__input" />
+            <input 
+            type="radio" 
+            name="rating"
+            value="4"  
+            class="rating__input" />
             <span class="rating__number">4</span>
           </label>
 
           <label class="rating__button" data-value="5">
-            <input type="radio" name="rating" class="rating__input" />
+            <input 
+            type="radio" 
+            name="rating"  
+            value="5"  
+            class="rating__input" />
             <span class="rating__number">5</span>
           </label>
         </div>
@@ -69,6 +90,6 @@
         <button type="submit" class="rating__submit">Submit</button>
       </form>
     </article>
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
