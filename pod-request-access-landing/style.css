@@ -39,6 +39,9 @@ img {
   /* TYPOGRAPHY-MOB*/
   --TEXT-PRESET-1-MOB: 300 2rem/120% var(--FF);
   --TEXT-PRESET-2-MOB: 300 0.875rem/150% var(--FF);
+
+  /* TYPOGRAPHY STATUS MESSAGE */
+  --STATUS-MESSAGE: bold 0.75rem var(--FF);
 }
 
 /* || UTILITY CLASSES */
@@ -140,7 +143,9 @@ h2 {
 
 .access_form {
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  gap: .5rem;
 }
 .pod-page__email-input-wrapper {
   display: flex;
@@ -171,3 +176,13 @@ h2 {
   border-radius: 28px;
   width: 100%;
 }
+
+.js-submit-status-message{
+  font: var(--STATUS-MESSAGE);
+}
+
+/* || TABLET */
+@media screen and (min-width: 768px) {}
+
+/* || DESKTOP */
+@media screen and (min-width: 1140px) {}

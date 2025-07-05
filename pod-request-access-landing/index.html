@@ -18,19 +18,12 @@
     <title>Pod Request Access</title>
   </head>
   <body>
-
     <main class="pod-page">
+      <figure class="podpage__logo">
+        <img src="./images/logo.svg" width="135" height="56" alt="Pod-Logo" />
 
-        <figure class="podpage__logo">
-            <img
-              src="./images/logo.svg"
-              width="135"
-              height="56"
-              alt="Pod-Logo"
-            />
-
-            <figcaption class="offscreen">pod-logo</figcaption>
-          </figure>
+        <figcaption class="offscreen">pod-logo</figcaption>
+      </figure>
       <article class="pod-page__content">
         <h1 class="pod-page__title center">
           <span>Publish your podcasts </span>everywhere.
@@ -43,8 +36,6 @@
         </p>
         <section class="pod-page__uno-reverse">
           <section class="pod-page__social-icons">
-
-
             <figure class="pod-page__social-icon">
               <img
                 src="./images/spotify.svg"
@@ -89,14 +80,15 @@
               <figcaption class="offscreen">pocket-casts</figcaption>
             </figure>
           </section>
+          <!-- 
+          action="https://htpbin.org/post"
+          method="post"
+          target="_blank" -->
 
-          <form
-            action="https://htpbin.org/post"
-            method="post"
-            target="_blank"
-            id="accessForm"
-            class="access_form"
-          >
+          <form 
+          id="accessForm" 
+          class="access_form" 
+          novalidate>
             <div class="pod-page__email-input-wrapper">
               <input
                 type="email"
@@ -109,7 +101,7 @@
                 Request Access
               </button>
             </div>
-            <p class="submit-status-message"></p>
+            <p class="js-submit-status-message"></p>
           </form>
         </section>
       </article>
@@ -122,5 +114,6 @@
     >
       <figcaption class="offscreen">bg-pattern-dots</figcaption>
     </figure>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
