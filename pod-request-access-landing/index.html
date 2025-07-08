@@ -25,15 +25,17 @@
         <figcaption class="offscreen">pod-logo</figcaption>
       </figure>
       <article class="pod-page__content">
-        <h1 class="pod-page__title center">
-          <span>Publish your podcasts </span>everywhere.
-        </h1>
+        <div class="pod-page__description-content">
+          <h1 class="pod-page__title center">
+            <span>Publish your podcasts </span>everywhere.
+          </h1>
 
-        <p class="pod-page__description center">
-          Upload your audio to Pod with a single click. We’ll then distribute
-          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
-          and more!
-        </p>
+          <p class="pod-page__description center">
+            Upload your audio to Pod with a single click. We’ll then distribute
+            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </p>
+        </div>
         <section class="pod-page__uno-reverse">
           <section class="pod-page__social-icons">
             <figure class="pod-page__social-icon">
@@ -85,10 +87,7 @@
           method="post"
           target="_blank" -->
 
-          <form 
-          id="accessForm" 
-          class="access_form" 
-          novalidate>
+          <form id="accessForm" class="access_form" novalidate>
             <div class="pod-page__email-input-wrapper">
               <input
                 type="email"
@@ -97,23 +96,45 @@
                 required
               />
 
-              <button class="pod-page__button" type="submit">
+              <button class="pod-page__button nowrap" type="submit">
                 Request Access
               </button>
             </div>
             <p class="js-submit-status-message"></p>
           </form>
         </section>
+
+        <figure
+          class="pod-page__dots responsive-image"
+          width="232"
+          height="104"
+          alt="bg-pattern-dots"
+        >
+          <figcaption class="offscreen">bg-pattern-dots</figcaption>
+        </figure>
+ 
+        <figure class="pod-page__host responsive-image">
+          <img
+            src="./images/image-host-tab.jpg"
+            width="491"
+            height="767"
+            alt="image-host"
+            class="host-tablet"
+          />
+
+          <img
+            src="./images/image-host-dsk.jpg"
+            width="888"
+            height="640"
+            alt="image-host"
+            class="host-dsk"
+          />
+
+          <figcaption class="offscreen">image-host</figcaption>
+        </figure> 
       </article>
     </main>
-    <figure
-      class="pod-page__dots responsive-image"
-      width="232"
-      height="104"
-      alt="bg-pattern-dots"
-    >
-      <figcaption class="offscreen">bg-pattern-dots</figcaption>
-    </figure>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
