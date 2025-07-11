@@ -1,4 +1,4 @@
-@import url("Your Font of Choice");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 /* || REST */
 * {
@@ -16,10 +16,41 @@ img {
 /* || VARIABLES */
 :root {
   /* COLORS */
+  --TITLE-SPAN-CLR: #ce9898;
+  --TITLE-CLR: #423a3a;
+  --DESCRIPTION-CLR: #ce9898;
+  --PLACEHOLDER-CLR: hsla(0, 36%, 70%, 0.5);
+  --INPUT-CLR: #423a3a;
+  --INPUT-BORDER-CLR: hsla(0, 36%, 70%, 0.5);
+  --INPUT-BORDER-ERROR-CLR: #f96464;
+  --INPUT-BORDER-SUCESS-CLR: #008000;
+  --INPUT-MESSAGE-ERROR-CLR: #f96464;
+  --INPUT-MESSAGE-SUCESS-CLR: #008000;
 
   /* GRADIENTS */
 
+  --BODY-BG-GRAD: linear-gradient(-15deg, #fff 0%, #fff4f4 100%);
+  --BUTTON-DEFAULT-GRAD: linear-gradient(-53deg, #f8bfbf 0%, #ee8b8b 100%);
+  --BUTTON-DISABLED-GRAD: linear-gradient(-53deg, #e0e0e0 0%, #8c8c8c 100%);
+
   /* TYPOGRAPHY */
+  --FF: "Josefin Sans", sans-serif;
+
+  /* TYPOGRAPHY-MOB  */
+  --TITLE-SPAN-MOB: 300 2.5rem/2.625rem var(--FF);
+  --TITLE-MOB: 600 2.5rem/2.625rem var(--FF);
+  --TITLE-LS-MOB: 0.6769rem;
+  --DESCRIPTION-MOB: normal 0.875rem/1.375rem var(--FF);
+  --INPUT-MOB: normal 0.875rem/1.75rem var(--FF);
+  --STATUS-MOB: normal 0.8125rem var(--FF);
+
+  /* TYPOGRAPHY-DSK  */
+  --TITLE-SPAN-DSK: 300 4rem/4rem var(--FF);
+  --TITLE-DSK: 600 4rem/4.4375rem var(--FF);
+  --TITLE-LS-DSK: 1.0825rem;
+  --DESCRIPTION-DSK: normal 1rem/1.75rem var(--FF);
+  --INPUT-DSK: normal 1rem/1.75rem var(--FF);
+  --STATUS-DSK: normal 0.8125rem/1.75rem var(--FF);
 }
 
 /* || UTILITY CLASSES */
