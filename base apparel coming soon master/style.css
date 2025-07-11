@@ -86,7 +86,7 @@ body {
   background-size: cover;
 }
 
-h1{
+h1 {
   margin: 0;
   padding: 0;
   font-size: inherit;
@@ -94,100 +94,193 @@ h1{
 }
 
 /* || HEADER */
-.header__logo{
+.header__logo {
   width: 100%;
   padding: 1.9375rem 0rem 2.0069rem 2rem;
 }
-.header__logo img{
+.header__logo img {
   max-width: 100px;
 }
-.header__mobile-hero{
+.header__mobile-hero {
   width: 100%;
   height: 250px;
 }
-.header__mobile-hero img{
+.header__mobile-hero img {
   width: 100%;
 }
 /* MAIN */
-.main-content{
-  margin: 4rem 2rem 5.75rem ;
+.main-content {
+  margin: 4rem 2rem 5.75rem;
   display: flex;
   flex-flow: column;
   align-items: center;
 }
 
-.main-content__title{
-  font:var(--TITLE-MOB);
+.main-content__title {
+  font: var(--TITLE-MOB);
   letter-spacing: var(--TITLE-LS-MOB);
   color: var(--TITLE-CLR);
   margin-bottom: 1rem;
   max-width: 311px;
   text-transform: uppercase;
 }
-.main-content__title span{
-  font:var(--TITLE-SPAN-MOB);
+.main-content__title span {
+  font: var(--TITLE-SPAN-MOB);
   color: var(--TITLE-SPAN-CLR);
 }
 
-.main-content__description{
+.main-content__description {
   font: var(--DESCRIPTION-MOB);
   color: var(--DESCRIPTION-CLR);
   max-width: 311px;
   margin-bottom: 2rem;
 }
 
-.rsvpForm__wrapper{
+.rsvpForm__wrapper {
   position: relative;
   width: 100%;
   max-width: 311px;
 }
 
-input[type="email"]{
+input[type="email"] {
   width: 100%;
-  padding: .6875rem calc(72px + 24px + 12px) .5625rem 1.5rem;
+  padding: 0.6875rem calc(72px + 24px + 12px) 0.5625rem 1.5rem;
   font: var(--INPUT-MOB);
   color: var(--INPUT-CLR);
   border: 1px solid var(--INPUT-BORDER-CLR);
   border-radius: 28px;
 }
 
-input[type="email"]::placeholder{
+input[type="email"]::placeholder {
   color: var(--PLACEHOLDER-CLR);
 }
 
-input[type="email"]:focus{
+input[type="email"]:focus {
   outline: none;
   box-shadow: none;
 }
-.rsvpForm__button{
+.rsvpForm__button {
   position: absolute;
   right: 0px;
-  top:50%; 
-  transform: translateY(-50%); 
+  top: 50%;
+  transform: translateY(-50%);
   background-image: var(--BUTTON-DEFAULT-GRAD);
   border: none;
-  padding: .9375rem  1.6975rem .9581rem 1.75rem  ;
+  padding: 0.9375rem 1.6975rem 0.9581rem 1.75rem;
   cursor: pointer;
   border-radius: 28px;
 }
-.rsvpForm__button:disabled{
+.rsvpForm__button:disabled {
   background-image: var(--BUTTON-DISABLED-GRAD);
   cursor: not-allowed;
 }
 
-.rsvpForm__status-icon{
+.rsvpForm__status-icon {
   position: absolute;
-  top:50%; 
+  top: 50%;
   transform: translateY(-50%);
   right: 72px;
   display: none;
 }
-.rsvpForm__button-icon img{
+.rsvpForm__button-icon img {
   max-width: 24px;
 }
 
-.status-message{
+.status-message {
   font: var(--STATUS-MOB);
   margin-top: 0.5rem;
-  margin-left:1.5rem ;
+  margin-left: 1.5rem;
+  display: none;
+}
+
+/* || DESKTOP-VIEW */
+@media (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  /* || HEADER */
+  .section-wrapper {
+    padding: 4.6819rem 13.75rem 9.5rem 10.3125rem;
+  }
+  .header {
+    margin-bottom: 136.09px;
+  }
+
+  .header__logo {
+    width: 0rpx;
+    padding: 0px;
+  }
+  .header__logo img {
+    max-width: 158px;
+  }
+
+  /* MAIN */
+  .main-content {
+    margin: 0px;
+    align-items: flex-start;
+  }
+
+  .main-content__title {
+    font: var(--TITLE-DSK);
+    letter-spacing: var(--TITLE-LS-DSK);
+    margin-bottom: 2rem;
+    max-width: 444px;
+  }
+  .main-content__title span {
+    font: var(--TITLE-SPAN-DSK);
+  }
+
+  .main-content__description {
+    font: var(--DESCRIPTION-DSK);
+    max-width: 444px;
+    margin-bottom: 2.5rem;
+  }
+
+  .rsvpForm__wrapper {
+    max-width: 445px;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    padding: 0.6875rem calc(116px + 24px + 12px ) 0.5625rem 1.5rem;
+    font: var(--INPUT-DSK);
+  }
+
+  .rsvpForm__button {
+    padding: 1.1875rem 2.8225rem 1.2081rem 2.875rem;
+  }
+  .rsvpForm__button:disabled {
+    background-image: var(--BUTTON-DISABLED-GRAD);
+    cursor: not-allowed;
+  }
+
+  .rsvpForm__status-icon {
+    right: 116px;
+  }
+  .rsvpForm__button-icon img {
+    max-width: 24px;
+  }
+
+  .status-message {
+    font: var(--STATUS-DSK);
+    margin-top: .25rem;
+    margin-left: 2rem;
+  }
+  .footer__desktop-hero{
+    display: block;
+    width: 42.36%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  .footer__desktop-hero img{
+    min-height: 100vh;
+    width: 100%;
+  }
 }
