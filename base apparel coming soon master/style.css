@@ -180,6 +180,7 @@ input[type="email"]:focus{
   top:50%; 
   transform: translateY(-50%);
   right: 72px;
+  display: none;
 }
 .rsvpForm__button-icon img{
   max-width: 24px;
