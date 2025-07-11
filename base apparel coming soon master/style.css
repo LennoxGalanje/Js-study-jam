@@ -81,17 +81,112 @@ body {
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
+  background-image: var(--BODY-BG-GRAD);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h1,
-h2 {
+h1{
   margin: 0;
   padding: 0;
   font-size: inherit;
   font-weight: normal;
 }
 
-a:any-link {
-  text-decoration: none;
-  color: black;
+/* || HEADER */
+.header__logo{
+  width: 100%;
+  padding: 1.9375rem 0rem 2.0069rem 2rem;
+}
+.header__logo img{
+  max-width: 100px;
+}
+.header__mobile-hero{
+  width: 100%;
+  height: 250px;
+}
+.header__mobile-hero img{
+  width: 100%;
+}
+/* MAIN */
+.main-content{
+  margin: 4rem 2rem 5.75rem ;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.main-content__title{
+  font:var(--TITLE-MOB);
+  letter-spacing: var(--TITLE-LS-MOB);
+  color: var(--TITLE-CLR);
+  margin-bottom: 1rem;
+  max-width: 311px;
+  text-transform: uppercase;
+}
+.main-content__title span{
+  font:var(--TITLE-SPAN-MOB);
+  color: var(--TITLE-SPAN-CLR);
+}
+
+.main-content__description{
+  font: var(--DESCRIPTION-MOB);
+  color: var(--DESCRIPTION-CLR);
+  max-width: 311px;
+  margin-bottom: 2rem;
+}
+
+.rsvpForm__wrapper{
+  position: relative;
+  width: 100%;
+  max-width: 311px;
+}
+
+input[type="email"]{
+  width: 100%;
+  padding: .6875rem calc(72px + 24px + 12px) .5625rem 1.5rem;
+  font: var(--INPUT-MOB);
+  color: var(--INPUT-CLR);
+  border: 1px solid var(--INPUT-BORDER-CLR);
+  border-radius: 28px;
+}
+
+input[type="email"]::placeholder{
+  color: var(--PLACEHOLDER-CLR);
+}
+
+input[type="email"]:focus{
+  outline: none;
+  box-shadow: none;
+}
+.rsvpForm__button{
+  position: absolute;
+  right: 0px;
+  top:50%; 
+  transform: translateY(-50%); 
+  background-image: var(--BUTTON-DEFAULT-GRAD);
+  border: none;
+  padding: .9375rem  1.6975rem .9581rem 1.75rem  ;
+  cursor: pointer;
+  border-radius: 28px;
+}
+.rsvpForm__button:disabled{
+  background-image: var(--BUTTON-DISABLED-GRAD);
+  cursor: not-allowed;
+}
+
+.rsvpForm__status-icon{
+  position: absolute;
+  top:50%; 
+  transform: translateY(-50%);
+  right: 72px;
+}
+.rsvpForm__button-icon img{
+  max-width: 24px;
+}
+
+.status-message{
+  font: var(--STATUS-MOB);
+  margin-top: 0.5rem;
+  margin-left:1.5rem ;
 }
