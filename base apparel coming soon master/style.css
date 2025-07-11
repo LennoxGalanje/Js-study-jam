@@ -210,11 +210,14 @@ input[type="email"]:focus {
   }
 
   .header__logo {
-    width: 0rpx;
+    width: 0px;
     padding: 0px;
   }
   .header__logo img {
     max-width: 158px;
+  }
+  .header__mobile-hero{
+    display: none;
   }
 
   /* MAIN */
@@ -228,6 +231,7 @@ input[type="email"]:focus {
     letter-spacing: var(--TITLE-LS-DSK);
     margin-bottom: 2rem;
     max-width: 444px;
+    text-align: left;
   }
   .main-content__title span {
     font: var(--TITLE-SPAN-DSK);
@@ -237,6 +241,7 @@ input[type="email"]:focus {
     font: var(--DESCRIPTION-DSK);
     max-width: 444px;
     margin-bottom: 2.5rem;
+    text-align: left;
   }
 
   .rsvpForm__wrapper {
@@ -251,10 +256,6 @@ input[type="email"]:focus {
 
   .rsvpForm__button {
     padding: 1.1875rem 2.8225rem 1.2081rem 2.875rem;
-  }
-  .rsvpForm__button:disabled {
-    background-image: var(--BUTTON-DISABLED-GRAD);
-    cursor: not-allowed;
   }
 
   .rsvpForm__status-icon {
