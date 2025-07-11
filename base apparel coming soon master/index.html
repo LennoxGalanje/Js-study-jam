@@ -1,16 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Lennox-Galanje">
-    <meta name="description" content="This is a base apparel coming soon master">
-    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Lennox-Galanje" />
+    <meta
+      name="description"
+      content="This is a base apparel coming soon master"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>base apparel coming soon master</title>
-</head>
-<body>
-    
-    <script type="module" src="app.js"></script> 
-</body>
+  </head>
+  <body>
+    <section class="section-wrapper">
+      <header class="header">
+        <figure class="header__logo">
+          <img src="./images/logo.svg" width="158" height="33" alt="logo" />
+          <figcaption class="offscreen">logo</figcaption>
+        </figure>
+
+        <figure class="header__mobile-hero">
+          <img
+            src="./images/hero-mobile.jpg"
+            width="375"
+            height="250"
+            alt="hero"
+          />
+
+          <figcaption class="offscreen"></figcaption>
+        </figure>
+      </header>
+
+      <main class="main-content">
+        <h1 class="main-content__title center">
+          <span>WE'RE</span> <br />COMING SOON
+        </h1>
+
+        <p class="main-content__description center">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <form
+          action="#"
+          class="main-content__rsvpForm"
+          id="rsvpForm"
+          novalidate
+        >
+          <div class="rsvpForm__wrapper">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="rsvpForm__email-input"
+              required
+              placeholder="Email Address"
+            />
+
+            <button type="submit" class="rsvpForm__button">
+              <figure class="rsvpForm__button-icon">
+                <img
+                  src="./images/icon-arrow.svg"
+                  width="12"
+                  height="20"
+                  alt="icon-arrow"
+                />
+
+                <figcaption class="offscreen">icon-arrow</figcaption>
+              </figure>
+            </button>
+
+            <figure class="rsvpForm__status-icon">
+              <img
+                src="./images/icon-error.svg"
+                width="24"
+                height="24"
+                alt="icon-error"
+              />
+
+              <figcaption class="offscreen">icon-error</figcaption>
+            </figure>
+          </div>
+        </form>
+      </main>
+    </section>
+    <figure class="footer__desktop-hero responsive-image">
+      <img
+        src="./images/hero-desktop.jpg"
+        alt="hero-dsk"
+        width="610"
+        height="800"
+      />
+      <figcaption class="offscreen">hero-dsk</figcaption>
+    </figure>
+    <script type="module" src="app.js"></script>
+  </body>
 </html>
