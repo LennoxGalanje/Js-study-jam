@@ -1,4 +1,4 @@
-@import url("Your Font of Choice");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 /* || REST */
 * {
@@ -16,10 +16,22 @@ img {
 /* || VARIABLES */
 :root {
   /* COLORS */
-
-  /* GRADIENTS */
+  --WHITE:#FFF;
+  --GREY-900: #48556A;
+  --GREY-500: #6E8098;
+  --GREY-400: #9DAEC2;
+  --GREY-200: #ECF2F8;
 
   /* TYPOGRAPHY */
+  --FF: "Manrope", sans-serif;
+  --Text-Preset-1: bold 1.25rem/130% var(--FF);
+  --Text-Preset-1-LS: 0.25px;
+  --Text-Preset-2: bold 0.8125rem/140% var(--FF);
+  --Text-Preset-2-LS: 0.12%;
+  --Text-Preset-2-Medium: 500 0.8125rem/140% var(--FF);
+  --Text-Preset-1-Medium-LS: 0.12%;
+  --Text-Preset-3: normal 0.8125rem/140% var(--FF);
+  --Text-Preset-3-LS: 25%;
 }
 
 /* || UTILITY CLASSES */
@@ -52,8 +64,7 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2 {
+h1{
   margin: 0;
   padding: 0;
   font-size: inherit;
