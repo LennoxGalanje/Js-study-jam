@@ -311,6 +311,7 @@ img[alt="instagram-hover"] {
   /* HEADER-FORM */
   .ping-header__subscribe-form {
     flex-flow: row;
+    align-items: flex-start;
     gap: 1rem;
   }
 
