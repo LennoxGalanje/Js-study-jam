@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Lennox-Galanje" />
+    <meta name="description" content="This is a contact form" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Contact-Form</title>
+  </head>
+  <body>
+    <!-- FORM -->
+    <form action="#" class="contact-form" id="contactForm" novalidate>
+      <!-- POPUP/TOAST/NOTIFICATION -->
+      <div class="popup-content popup-hidden">
+        <div class="message-title">
+          <figure>
+            <img
+              src="./images/icon-success-check.svg"
+              width="20"
+              height="21"
+              alt="icon-success-check"
+            />
+
+            <figcaption class="offscreen">icon-sucess-check</figcaption>
+          </figure>
+
+          <h2>Message Sent!</h2>
+        </div>
+        <p class="message-description">
+          Thanks for completing the form. We’ll be in touch soon!
+        </p>
+      </div>
+
+      <section class="form-outer-container">
+        <h1 class="form-title">Contact Us</h1>
+
+        <section class="form-inner-container">
+          <!-- NAME-WRAPPER -->
+          <div class="form-name-wrapper">
+            <!-- FIRST-NAME -->
+            <div class="name-wrapper">
+              <p class="input-title">First Name <span>*</span></p>
+
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                class="name-input"
+                placeholder="Billian"
+                required
+              />
+
+              <p class="message">hello</p>
+            </div>
+
+            <!-- LAST-NAME -->
+            <div class="name-wrapper">
+              <p class="input-title">Last Name <span>*</span></p>
+
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                class="name-input"
+                placeholder="Samuel"
+                required
+              />
+
+              <p class="message">hello</p>
+            </div>
+
+            <!-- EMAIL-INPUT -->
+            <div class="email-wrapper">
+              <p class="input-title">Last Name <span>*</span></p>
+
+              <input
+                type="email"
+                name="email"
+                id="email-input"
+                class="email-input"
+                placeholder="someone@example.com"
+                required
+              />
+
+              <p class="message">hello</p>
+            </div>
+
+            <!-- QUERY-TYPE -->
+            <div class="form-query-wrapper">
+              <p class="input-title">Query Type <span>*</span></p>
+
+              <div class="form-radio-group">
+                <label class="query-button" aria-data="General-Enquiry">
+                  <input type="radio" name="query" value="General-Enquiry" />
+
+                  <span class="custom-radio"></span>
+                  <span class="label-text">General-Enquiry</span>
+                </label>
+
+                <label class="query-button" aria-data="Support Request">
+                  <input type="radio" name="query" value="Support Request" />
+
+                  <span class="custom-radio"></span>
+                  <span class="label-text">Support Request</span>
+                </label>
+              </div>
+              <p class="message">hello</p>
+            </div>
+
+            <!-- MESSAGE -->
+            <div class="message-wrapper">
+              <p class="input-title">Message <span>*</span></p>
+
+              <textarea
+                name="message-input"
+                id="message-input"
+                required
+              ></textarea>
+
+              <p class="message">hello</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <label class="check-wrapper">
+        <div class="check-container">
+          <input
+            type="checkbox"
+            name="input-checkbox"
+            id="input-check1"
+            required
+          />
+
+          <span class="custom-checkbox"></span>
+          <span class="custom-checkbox"
+            >I hereby consent to being contacted by the team
+            <span>*</span></span
+          >
+        </div>
+        <p class="message">hello</p>
+      </label>
+
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </body>
+</html>
