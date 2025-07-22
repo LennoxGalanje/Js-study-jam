@@ -1,4 +1,4 @@
-@import url("Your Font of Choice");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 /* || REST */
 * {
@@ -16,10 +16,26 @@ img {
 /* || VARIABLES */
 :root {
   /* COLORS */
-
-  /* GRADIENTS */
+  --GREY-900: #2a4144;
+  --GREY-500: #86a2a5;
+  --WHITE: #fff;
+  --GREEN-600: #0c7d69;
+  --GREEN-200: #e0f1e8;
+  --ERROR-MESSAGE: #d73c3c;
+  --SUCCESS-MESSAGE: #0c7d69;
+  --BUTTON-DISABLED: #8c8c8c;
+  --BUTTON-HOVER: #063f35;
 
   /* TYPOGRAPHY */
+  --FF: "Karla", sans-serif;
+
+  /* TYPOGRAPHY-SHARED */
+  --BODY-LH: 150%;
+  --HEADING: bold 2rem/100% var(--FF);
+  --HEADING-LS: -0.0625rem;
+  --BODY-M-BOLD: bold 1.25rem / var(--BODY-LH) var(--FF);
+  --BODY-M: normal 1.25rem / var(--BODY-LH) var(--FF);
+  --BODY-S: normal 1rem / var(--BODY-LH) var(--FF);
 }
 
 /* || UTILITY CLASSES */
@@ -58,9 +74,4 @@ h2 {
   padding: 0;
   font-size: inherit;
   font-weight: normal;
-}
-
-a:any-link {
-  text-decoration: none;
-  color: black;
 }
