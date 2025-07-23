@@ -104,7 +104,7 @@ h2 {
   height: 131px;
   background-color: var(--GREY-900);
   border-radius: 12px;
-  padding: 24px;
+  padding: 1.5rem;
 }
 
 .message-title {
@@ -333,7 +333,9 @@ input[type="checkbox"] {
   flex-shrink: 0;
   flex-grow: 0;
 }
-
+.custom-checkbox.invalid {
+  border-color: var(--ERROR-MESSAGE);
+}
 input[type="checkbox"]:checked + .custom-checkbox::after {
   content: url(./images/icon-checkbox-check.svg);
   top: 50%;
@@ -358,6 +360,7 @@ input[type="checkbox"]:checked + .custom-checkbox{
 
 .submit-button:disabled{
   background-color: var(--BUTTON-DISABLED);
+  cursor: not-allowed;
 }
 
 /* || TABLET */
